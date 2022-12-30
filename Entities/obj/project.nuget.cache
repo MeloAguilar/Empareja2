@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BnJznUMkfMkM+IQ0liFwu+tt0w8uVidxDJTSFn7jl6AytBGdQzgOWLH9Ej4DgKU7oWb4kg8XbVZ5z0CXqy/HOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\carra\\source\\repos\\Descubre_las_Parejas\\Entities\\Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\carra\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
