@@ -49,15 +49,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\KyloSaber.png" />
+	  <None Remove="Resources\Images\badersaber.png" />
+	  <None Remove="Resources\Images\kylisaber.png" />
 	  <None Remove="Resources\Images\LukeSaber.png" />
-	  <None Remove="Resources\Images\ManceLightSaber.png" />
-	  <None Remove="Resources\Images\MandalSaber.png" />
-	  <None Remove="Resources\Images\ObiWanLightSaber.png" />
+	  <None Remove="Resources\Images\mandalorsaber.png" />
+	  <None Remove="Resources\Images\obiwansaber.png" />
 	  <None Remove="Resources\Images\QuiGonSaber.png" />
 	  <None Remove="Resources\Images\TanoSabers.png" />
-	  <None Remove="Resources\Images\VaderSaber.png" />
-	  <None Remove="Resources\Images\YodaLighSaber.png" />
+	  <None Remove="Resources\Images\wimdusaber.png" />
+	  <None Remove="Resources\Images\yodasaber.png" />
 	</ItemGroup>
 
 	<ItemGroup>
