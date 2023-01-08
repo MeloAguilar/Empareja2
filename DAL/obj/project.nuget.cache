@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iMWt38coUeYkG4TvrNq/cD5Zelif0XRso/GLsmfw/+tUukA5i7oaDCN3Mg32BAoOxa376OqEGfWjkFM2Lo7IyQ==",
+  "dgSpecHash": "46TrPUGTVuo/C8MA1Aq2TNuyfWtSZiS+4ULD0tM3DEYXkH9hFPj5OlWfgIrYYmX6+OJbc66HGKPxdDXMzkkXTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carra\\source\\repos\\Descubre_las_Parejas\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\carra\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\carra\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -62,11 +62,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carra\\source\\repos\\Descubre_las_Parejas\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\carra\\source\\repos\\Descubre_las_Parejas\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\carra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carra\\source\\repos\\Descubre_las_Parejas\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

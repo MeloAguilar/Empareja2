@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BnJznUMkfMkM+IQ0liFwu+tt0w8uVidxDJTSFn7jl6AytBGdQzgOWLH9Ej4DgKU7oWb4kg8XbVZ5z0CXqy/HOQ==",
+  "dgSpecHash": "Td0xB3vxO9Bi1V7wlKgOVl44Vims5itHeWHawc9mWZbh7QaPg+YYnYArc6teiT3bUFiqR8MTtZc5XIIIJL6Stw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carra\\source\\repos\\Descubre_las_Parejas\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\carra\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512"
   ],

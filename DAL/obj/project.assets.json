@@ -2635,11 +2635,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carra\\source\\repos\\Descubre_las_Parejas\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\carra\\source\\repos\\Descubre_las_Parejas\\DAL\\DAL.csproj",
+      "projectPath": "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\carra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carra\\source\\repos\\Descubre_las_Parejas\\DAL\\obj\\",
+      "outputPath": "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2661,8 +2661,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\carra\\source\\repos\\Descubre_las_Parejas\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\carra\\source\\repos\\Descubre_las_Parejas\\Entities\\Entities.csproj"
+            "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj"
             }
           }
         }

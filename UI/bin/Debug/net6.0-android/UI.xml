@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UI</name>
+    </assembly>
+    <members>
+        <member name="P:UI.ViewModels.Utilities.VMBase.Title">
+            <inheritdoc cref="F:UI.ViewModels.Utilities.VMBase.title"/>
+        </member>
+        <member name="P:UI.ViewModels.Utilities.VMBase.IsBusy">
+            <inheritdoc cref="F:UI.ViewModels.Utilities.VMBase.isBusy"/>
+        </member>
+    </members>
+</doc>

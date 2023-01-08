@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tr0A85gFv5dn97IeAWrpknIIf/ITX0VqzqDhWL0faDV1xaZuRsp1yoLIOX+plPziQH2zS6+DClIHPwF2X33RAg==",
+  "dgSpecHash": "vVtpAXmvqs0HLnRzAlO8awexgSdVmO90UT9xc0oEBO7Whwqm5mWBPX016FMCW2OC/KQBbYfcCvMyCg7TyY68Uw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carra\\source\\repos\\Descubre_las_Parejas\\BL\\BL.csproj",
+  "projectFilePath": "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\BL\\BL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\carra\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\carra\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
