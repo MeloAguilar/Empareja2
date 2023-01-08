@@ -12,6 +12,7 @@ namespace UI
 
 			Routing.RegisterRoute("game", typeof(GamePage));
 			Routing.RegisterRoute("scoreboard", typeof(ScoreboardPage));
+			Routing.RegisterRoute("main", typeof(MainPAge));
 		}
 	}
 }

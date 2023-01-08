@@ -57,7 +57,7 @@ namespace DAL.Listas
 
                 while (miLector.Read())
                 {
-                    lista.Add(new Usuario(miLector.GetInt32(0), miLector.GetString(1), miLector.GetString(2), miLector.GetInt32(3)));
+                    lista.Add(new Usuario( miLector.GetString(0), miLector.GetString(1), miLector.GetInt32(2)));
 
                 }
             }

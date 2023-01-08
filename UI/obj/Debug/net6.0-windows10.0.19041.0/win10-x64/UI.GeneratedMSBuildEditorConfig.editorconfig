@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = UI.Views.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
 
+[C:/Users/carra/source/repos/MeloAguilar/Empareja2/UI/Views/MainPAge.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = UI.Views.MainPAge.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MainPAge.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MainPAge.xaml
+
 [C:/Users/carra/source/repos/MeloAguilar/Empareja2/UI/Views/ScoreboardPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = UI.Views.ScoreboardPage.xaml

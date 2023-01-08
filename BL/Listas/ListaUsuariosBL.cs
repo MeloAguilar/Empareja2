@@ -14,7 +14,7 @@ namespace BL.Listas
 		ListaUsuarios dal;
 
 
-		ListaUsuariosBL()
+		public ListaUsuariosBL()
 		{
 			dal = new ListaUsuarios();
 		}

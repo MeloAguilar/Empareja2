@@ -50,11 +50,13 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\badersaber.png" />
+	  <None Remove="Resources\Images\gameicon.png" />
 	  <None Remove="Resources\Images\kylisaber.png" />
 	  <None Remove="Resources\Images\LukeSaber.png" />
 	  <None Remove="Resources\Images\mandalorsaber.png" />
 	  <None Remove="Resources\Images\obiwansaber.png" />
 	  <None Remove="Resources\Images\QuiGonSaber.png" />
+	  <None Remove="Resources\Images\scoreicon.png" />
 	  <None Remove="Resources\Images\TanoSabers.png" />
 	  <None Remove="Resources\Images\wimdusaber.png" />
 	  <None Remove="Resources\Images\yodasaber.png" />
@@ -74,6 +76,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MainPAge.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\ScoreboardPage.xaml">

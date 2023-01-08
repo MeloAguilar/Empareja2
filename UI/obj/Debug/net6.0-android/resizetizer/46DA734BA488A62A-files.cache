@@ -1,4 +1,15 @@
-﻿obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
+﻿obj\Debug\net6.0-android\resizetizer\r\drawable\badersaber.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\gameicon.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\kylisaber.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\lukesaber.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\mandalorsaber.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\obiwansaber.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\quigonsaber.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\scoreicon.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\tanosabers.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\wimdusaber.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\yodasaber.png
+obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\splash.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\splash.png

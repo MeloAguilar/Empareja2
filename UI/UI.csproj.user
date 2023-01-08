@@ -29,6 +29,9 @@
     <MauiXaml Update="Resources\Styles\Styles.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\MainPAge.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\ScoreboardPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

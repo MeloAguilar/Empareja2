@@ -20,10 +20,14 @@ namespace BL.Gestion
             dal = new GestionUsuarios();
         }
 
+	
 
+		public void generarTablaBL()
+        {
+            dal.generarTabla();
+        }
 
-
-        public int insertarUsuarioBL(Usuario user)
+		public int insertarUsuarioBL(Usuario user)
         {
             return dal.insertarUsuario(user);
         }
@@ -31,21 +35,21 @@ namespace BL.Gestion
 
 
 
-        public int deleteUsuarioBL(int id)
+        public int deleteUsuarioBL(string id)
         {
             return dal.deleteUsuario(id);
         }
 
 
 
-        public int editUsuarioBL(Usuario usuario, int id)
+        public int editUsuarioBL(Usuario usuario, string id)
         {
             return dal.editUsuario(usuario, id);
         }
 
 
 
-        public Usuario getUsuarioByIdBL(int id)
+        public Usuario getUsuarioByIdBL(string id)
         {
             return dal.getUsuarioById(id);
         }

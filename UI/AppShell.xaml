@@ -6,12 +6,21 @@
     xmlns:local="clr-namespace:UI.Views"
     Shell.FlyoutBehavior="Disabled">
 
+    <ShellContent
+        Title="Login"
+        Route="login"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        FlyoutItemIsVisible="False"/>
 
-    <ShellContent Title="Game"
-                 Icon="cat.png"
-                 ContentTemplate="{DataTemplate views:CatsPage}" />
-    <ShellContent Title="Dogs"
-                 Icon="dog.png"
-                 ContentTemplate="{DataTemplate views:DogsPage}" />
+    <FlyoutItem Title="Game"
+                 Icon="gameicon.png"
+                 Route="game" />
+    <FlyoutItem Title="Highlights"
+                 Icon="scoreicon.png"
+                 Route="scoreboard" />
+    <ShellContent
+        ContentTemplate="{DataTemplate local:MainPAge}"
+        Route="main"
+        FlyoutItemIsVisible="True"/>
 
 </Shell>

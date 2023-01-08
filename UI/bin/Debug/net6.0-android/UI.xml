@@ -4,6 +4,40 @@
         <name>UI</name>
     </assembly>
     <members>
+        <member name="M:UI.ViewModels.LoginVM.SignIn">
+            <summary>
+            Comando que se encarga de, si el usuario y la contraseña que se introdujeron coinciden con los datos que se encuentran en la base de datos,
+            enviar al usuario a la página de inicio del juego.
+            </summary>
+        </member>
+        <member name="M:UI.ViewModels.LoginVM.SignUp">
+            <summary>
+            Comando que se encarga de, si el usuario es nuevo, crear un usuario en la base de datos y,
+            posteriormente, enviarlo a la página de inicio
+            
+            Precondiciones:
+            Postcondiciones:
+            
+            </summary>
+        </member>
+        <member name="P:UI.ViewModels.LoginVM.Nick">
+            <inheritdoc cref="F:UI.ViewModels.LoginVM.nick"/>
+        </member>
+        <member name="P:UI.ViewModels.LoginVM.Password">
+            <inheritdoc cref="F:UI.ViewModels.LoginVM.password"/>
+        </member>
+        <member name="F:UI.ViewModels.LoginVM.signInCommand">
+            <summary>The backing field for <see cref="P:UI.ViewModels.LoginVM.SignInCommand"/>.</summary>
+        </member>
+        <member name="P:UI.ViewModels.LoginVM.SignInCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:UI.ViewModels.LoginVM.SignIn"/>.</summary>
+        </member>
+        <member name="F:UI.ViewModels.LoginVM.signUpCommand">
+            <summary>The backing field for <see cref="P:UI.ViewModels.LoginVM.SignUpCommand"/>.</summary>
+        </member>
+        <member name="P:UI.ViewModels.LoginVM.SignUpCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:UI.ViewModels.LoginVM.SignUp"/>.</summary>
+        </member>
         <member name="P:UI.ViewModels.Utilities.VMBase.Title">
             <inheritdoc cref="F:UI.ViewModels.Utilities.VMBase.title"/>
         </member>

@@ -25,6 +25,25 @@ namespace DAL.Gestion
         }
 
 
+
+ 
+
+        public void generarTabla()
+        {
+            SqlConnection cnn = null;
+            try
+            {
+                cnn = miConexion.getConnection();
+                SqlCommand comando = new SqlCommand();
+                comando.Connection = cnn;
+                comando.CommandText = "Create Table Usuarios(nickname varchar(30) Primary Key, password varchar(50), score int)";
+            }catch(Exception e)
+            {
+                throw e;
+            }
+        }
+
+
         /// <summary>
         /// <Header> inserPersona(clsPersona user) : bool </Header>
         /// Método que se encarga de insertar un registro en la tabla 
@@ -49,8 +68,7 @@ namespace DAL.Gestion
                 cnn = miConexion.getConnection();
                 SqlCommand comando = new SqlCommand();
                 comando.Connection = cnn;
-                comando.CommandText = "Insert into usuarios values(@id, @nick, @pass, @score)";
-                comando.Parameters.AddWithValue("@id", user.IdUsuario);
+                comando.CommandText = "Insert into usuarios (nickname, password, score) values(@nick, @pass, @score)";
                 comando.Parameters.AddWithValue("@nick", user.Nick);
                 comando.Parameters.AddWithValue("@pass", user.Password);
                 comando.Parameters.AddWithValue("@score", user.Score);
@@ -96,7 +114,7 @@ namespace DAL.Gestion
         ///			-false: no se pudo eliminar el registro en la base de datos.
         ///			-true: el registro se eliminó satisfactoriamente.
         /// </returns>
-        public int deleteUsuario(int id)
+        public int deleteUsuario(string id)
         {
             int filas;
             SqlConnection cnn = null;
@@ -105,7 +123,7 @@ namespace DAL.Gestion
                 cnn = miConexion.getConnection();
                 SqlCommand comando = new SqlCommand();
                 comando.Connection = cnn;
-                comando.CommandText = "Delete From Usuarios where id = @id";
+                comando.CommandText = "Delete From Usuarios where nickname = @id";
                 comando.Parameters.AddWithValue("@id", id);
                 filas = comando.ExecuteNonQuery();
 
@@ -152,7 +170,7 @@ namespace DAL.Gestion
         ///			-true: el registro se editó satisfactoriamente.
         /// </returns>
         /// 
-        public int editUsuario(Usuario usuario, int id)
+        public int editUsuario(Usuario usuario, string id)
         {
             int filas;
             SqlConnection cnn = null;
@@ -163,8 +181,7 @@ namespace DAL.Gestion
                 cnn = miConexion.getConnection();
                 SqlCommand comando = new SqlCommand();
                 comando.Connection = cnn;
-                comando.CommandText = "Update Usuarios set nick = @nombre, password = @password, score = @score Where id = @id";
-                comando.Parameters.AddWithValue("@id", id);
+                comando.CommandText = "Update Usuarios set nickname = @nombre, password = @password, score = @score Where id = @id";
                 comando.Parameters.AddWithValue("@nombre", usuario.Nick);
                 comando.Parameters.AddWithValue("@password", usuario.Password);
                 comando.Parameters.AddWithValue("@score", usuario.Score);
@@ -202,7 +219,7 @@ namespace DAL.Gestion
                 SqlCommand comando = new SqlCommand();
                 SqlDataReader lector;
                 comando.Connection = cnn;
-                comando.CommandText = "Select * From Personas where nick = @nick and password = @password";
+                comando.CommandText = "Select * From Usuarios where nickname = @nick and password = @password";
                 comando.Parameters.AddWithValue("@nick", nick);
                 comando.Parameters.AddWithValue("@password", password);
 
@@ -212,19 +229,18 @@ namespace DAL.Gestion
                     while (lector.Read())
                     {
                         usuario = new(
-                            lector.GetInt32(0),
-                            lector.GetString(1),
-                            lector.GetString(2),
-                            lector.GetInt32(3)
+                            lector.GetString(0),
+                            "************",
+                            lector.GetInt32(2)
                             );
                     }
                 }
 
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw;
+                throw e;
             }
             finally
             {
@@ -259,7 +275,7 @@ namespace DAL.Gestion
     ///			-true: el registro se editó satisfactoriamente.
     /// </returns>
     /// 
-    public Usuario getUsuarioById(int id)
+    public Usuario getUsuarioById(string id)
         {
             Usuario usuario = null;
             SqlConnection cnn = null;
@@ -271,7 +287,7 @@ namespace DAL.Gestion
                 SqlCommand comando = new SqlCommand();
                 SqlDataReader lector;
                 comando.Connection = cnn;
-                comando.CommandText = "Select * From Personas where id = @id";
+                comando.CommandText = "Select * From Usuarios where id = @id";
                 comando.Parameters.AddWithValue("@id", id);
 
                 lector = comando.ExecuteReader();
@@ -280,10 +296,9 @@ namespace DAL.Gestion
                     while (lector.Read())
                     {
                         usuario = new(
-                            lector.GetInt32(0),
+                            lector.GetString(0),
                             lector.GetString(1),
-                            lector.GetString(2),
-                            lector.GetInt32(3)
+                            lector.GetInt32(2)
                             );
                     }
                 }
