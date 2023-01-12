@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj": {}
+    "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj": {
+    "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\carra\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\Entities\\obj\\",
         "projectStyle": "PackageReference",
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -39,7 +39,7 @@ namespace DAL.Gestion
                 comando.CommandText = "Create Table Usuarios(nickname varchar(30) Primary Key, password varchar(50), score int)";
             }catch(Exception e)
             {
-                throw e;
+                throw e ;
             }
         }
 

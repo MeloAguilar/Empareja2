@@ -2655,9 +2655,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\BL\\BL.csproj",
+      "projectUniqueName": "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\BL\\BL.csproj",
       "projectName": "BL",
-      "projectPath": "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\BL\\BL.csproj",
+      "projectPath": "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\BL\\BL.csproj",
       "packagesPath": "C:\\Users\\carra\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\BL\\obj\\",
       "projectStyle": "PackageReference",
@@ -2681,11 +2681,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\DAL\\DAL.csproj"
+            "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\carra\\source\\repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj"
+            "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\carra\\Source\\Repos\\MeloAguilar\\Empareja2\\Entities\\Entities.csproj"
             }
           }
         }
@@ -2721,7 +2721,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
