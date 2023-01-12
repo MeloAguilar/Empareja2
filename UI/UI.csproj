@@ -49,9 +49,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\back.jpg" />
 	  <None Remove="Resources\Images\badersaber.png" />
+	  <None Remove="Resources\Images\dookusaber.png" />
 	  <None Remove="Resources\Images\gameicon.png" />
-	  <None Remove="Resources\Images\kylisaber.png" />
+	  <None Remove="Resources\Images\kylosaber.png" />
 	  <None Remove="Resources\Images\LukeSaber.png" />
 	  <None Remove="Resources\Images\mandalorsaber.png" />
 	  <None Remove="Resources\Images\obiwansaber.png" />

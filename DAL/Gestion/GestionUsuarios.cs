@@ -36,7 +36,7 @@ namespace DAL.Gestion
                 cnn = miConexion.getConnection();
                 SqlCommand comando = new SqlCommand();
                 comando.Connection = cnn;
-                comando.CommandText = "Create Table Usuarios(nickname varchar(30) Primary Key, password varchar(50), score int)";
+                comando.CommandText = "Create Table usuariosC (nickname varchar(30) Primary Key, password varchar(50), score long)";
             }catch(Exception e)
             {
                 throw e ;
@@ -68,7 +68,7 @@ namespace DAL.Gestion
                 cnn = miConexion.getConnection();
                 SqlCommand comando = new SqlCommand();
                 comando.Connection = cnn;
-                comando.CommandText = "Insert into usuarios (nickname, password, score) values(@nick, @pass, @score)";
+                comando.CommandText = "Insert into usuariosC (nickname, password, score) values(@nick, @pass, @score)";
                 comando.Parameters.AddWithValue("@nick", user.Nick);
                 comando.Parameters.AddWithValue("@pass", user.Password);
                 comando.Parameters.AddWithValue("@score", user.Score);
@@ -123,7 +123,7 @@ namespace DAL.Gestion
                 cnn = miConexion.getConnection();
                 SqlCommand comando = new SqlCommand();
                 comando.Connection = cnn;
-                comando.CommandText = "Delete From Usuarios where nickname = @id";
+                comando.CommandText = "Delete From usuariosC where nickname = @id";
                 comando.Parameters.AddWithValue("@id", id);
                 filas = comando.ExecuteNonQuery();
 
@@ -181,7 +181,7 @@ namespace DAL.Gestion
                 cnn = miConexion.getConnection();
                 SqlCommand comando = new SqlCommand();
                 comando.Connection = cnn;
-                comando.CommandText = "Update Usuarios set nickname = @nombre, password = @password, score = @score Where id = @id";
+                comando.CommandText = "Update usuariosC set nickname = @nombre, password = @password, score = @score Where id = @id";
                 comando.Parameters.AddWithValue("@nombre", usuario.Nick);
                 comando.Parameters.AddWithValue("@password", usuario.Password);
                 comando.Parameters.AddWithValue("@score", usuario.Score);
@@ -219,7 +219,7 @@ namespace DAL.Gestion
                 SqlCommand comando = new SqlCommand();
                 SqlDataReader lector;
                 comando.Connection = cnn;
-                comando.CommandText = "Select * From Usuarios where nickname = @nick and password = @password";
+                comando.CommandText = "Select * From usuariosC where nickname = @nick and password = @password";
                 comando.Parameters.AddWithValue("@nick", nick);
                 comando.Parameters.AddWithValue("@password", password);
 
@@ -287,7 +287,7 @@ namespace DAL.Gestion
                 SqlCommand comando = new SqlCommand();
                 SqlDataReader lector;
                 comando.Connection = cnn;
-                comando.CommandText = "Select * From Usuarios where id = @id";
+                comando.CommandText = "Select * From usuariosC where id = @id";
                 comando.Parameters.AddWithValue("@id", id);
 
                 lector = comando.ExecuteReader();

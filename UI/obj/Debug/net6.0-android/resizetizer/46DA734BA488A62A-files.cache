@@ -1,6 +1,9 @@
-﻿obj\Debug\net6.0-android\resizetizer\r\drawable\badersaber.png
+﻿obj\Debug\net6.0-android\resizetizer\r\drawable\back.jpg
+obj\Debug\net6.0-android\resizetizer\r\drawable\badersaber.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\dookusaber.png
 obj\Debug\net6.0-android\resizetizer\r\drawable\gameicon.png
 obj\Debug\net6.0-android\resizetizer\r\drawable\kylisaber.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\kylosaber.png
 obj\Debug\net6.0-android\resizetizer\r\drawable\lukesaber.png
 obj\Debug\net6.0-android\resizetizer\r\drawable\mandalorsaber.png
 obj\Debug\net6.0-android\resizetizer\r\drawable\obiwansaber.png

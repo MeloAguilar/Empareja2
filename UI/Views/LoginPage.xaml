@@ -7,33 +7,77 @@
     <ContentPage.BindingContext>
         <vm:LoginVM/>
     </ContentPage.BindingContext>
-    <VerticalStackLayout>
+
+    
+    <VerticalStackLayout
+        Padding="5"
+        VerticalOptions="Start"
+        HorizontalOptions="CenterAndExpand"
+        Spacing="100"
+>
+        <Frame
+            BackgroundColor="AliceBlue"
+            HeightRequest="100"
+            >
+            <Label
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Text="Empareja2"
+                TextColor="DarkSlateGrey"
+                FontAttributes="Bold"
+                FontSize="Title"/>
+        </Frame>
+
         <Grid
-            ColumnDefinitions="*,*"
-            RowDefinitions="*,*,*,*"
+            ColumnDefinitions="150,200"
+            RowDefinitions="80,80"
             >
 
             <!--Nickname-->
             
             <Label
-                Text="Nickname"
-                Grid.Row="1"
-                Grid.Column="1"/>
-            <Entry
-                Grid.Row="1"
-                Grid.Column="2"
+                VerticalOptions="Center"
+                FontAttributes="Bold"
+                Padding="0"
+                Text="nickname"
+                HorizontalOptions="End"/>
+            <Border
+                Margin="12,0,30,0"
+                StrokeShape="RoundRectangle 13,13,13,13"
+                VerticalOptions="Center"
+                Padding="1"
+                Grid.Column="2">
+                <Entry
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Placeholder="pepito"
+                    Margin="6,0,0,0"
                 Text="{Binding Nick}"/>
+            </Border>
 
             <!--Password-->
-            
+
             <Label
-                Text="Password"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                Text="password"
                 Grid.Row="2"
-                Grid.Column="1"/>
-            <Entry
+                HorizontalOptions="End"/>
+            <Border
+                StrokeShape="RoundRectangle 13,13,13,13"
+                Margin="12,0,30,0"
+                Padding="0"
+                VerticalOptions="Center"
                 Grid.Row="2"
-                Grid.Column="2"
+                Grid.Column="2"> 
+                <Entry
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    IsPassword="True"
+                    Placeholder="*************"
                 Text="{Binding Password}"/>
+            </Border>
+           
             
             <!--Buttons-->
 
@@ -41,7 +85,10 @@
 
         </Grid>
         <HorizontalStackLayout
-            Spacing="10">
+            Padding="0,160,0,0"
+            VerticalOptions="End"
+            Spacing="30"
+            HorizontalOptions="Center">
             <Button
                 Text="Sign in"
                 Command="{Binding SignInCommand}"/>

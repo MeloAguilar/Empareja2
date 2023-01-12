@@ -4,6 +4,34 @@
         <name>UI</name>
     </assembly>
     <members>
+        <member name="M:UI.ViewModels.GameVM.eleccionCarta(System.Int32)">
+            <summary>
+            Método que se encarga de darle elatributo urlFront a un objeto de tipo Card segun el entero que le llegue como parámetro
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UI.ViewModels.GameVM.comprobarCartas(System.Int32[])">
+            <summary>
+            Métoido que se encarga de comprobar que todas las cartas tengan su respectiva pareja
+            </summary>
+            <param name="numCards"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UI.ViewModels.GameVM.getCards">
+            <summary>
+            Método privado que sirve para generar la posicion de cada carta en cada partida.
+            </summary>
+        </member>
+        <member name="P:UI.ViewModels.GameVM.User">
+            <inheritdoc cref="F:UI.ViewModels.GameVM.user"/>
+        </member>
+        <member name="P:UI.ViewModels.GameVM.Mode">
+            <inheritdoc cref="F:UI.ViewModels.GameVM.mode"/>
+        </member>
+        <member name="P:UI.ViewModels.GameVM.SelectedCard">
+            <inheritdoc cref="F:UI.ViewModels.GameVM.selectedCard"/>
+        </member>
         <member name="M:UI.ViewModels.LoginVM.SignIn">
             <summary>
             Comando que se encarga de, si el usuario y la contraseña que se introdujeron coinciden con los datos que se encuentran en la base de datos,

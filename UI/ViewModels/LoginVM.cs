@@ -32,6 +32,7 @@ namespace UI.ViewModels
 
 		public LoginVM() {
 			gestionBL.generarTablaBL();
+			gestionBL.insertarUsuarioBL(new Usuario("Admin", "Admin", ));
 		}
 
 		#endregion
@@ -48,9 +49,12 @@ namespace UI.ViewModels
 
 			try
 			{
-				gestionBL.getUsuarioByNickAndPasswordBL(nick, password);
+				var user = gestionBL.getUsuarioByNickAndPasswordBL(nick, password);
 
-				await Shell.Current.GoToAsync("main", false );
+				Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
+				var usuari = new Dictionary<string, object>();
+				usuari.Add("user", user);
+				await Shell.Current.GoToAsync("main", false, usuari);
 			}
 			catch (Exception) 
 			{
@@ -89,8 +93,8 @@ namespace UI.ViewModels
 				gestionBL.insertarUsuarioBL(user);
 				Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
 				var usuari = new Dictionary<string, object>();
-				usuari.Add(nameof(Usuario),"User");
-				await Shell.Current.GoToAsync("main");
+				usuari.Add("user", user);
+				await Shell.Current.GoToAsync("main",false, usuari);
 			}
 		}
 

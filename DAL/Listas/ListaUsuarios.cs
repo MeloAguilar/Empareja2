@@ -44,30 +44,37 @@ namespace DAL.Listas
 
             SqlConnection cnn = null;
 
-            cnn = miConexion.getConnection();
-            SqlCommand cmd = new SqlCommand();
-            SqlDataReader miLector;
-
-            cmd.CommandText = "Select * From Usuarios";
-
-            cmd.Connection = cnn;
-            miLector = cmd.ExecuteReader();
-            if (miLector.HasRows)
+            try
             {
+                cnn = miConexion.getConnection();
+                SqlCommand cmd = new SqlCommand();
+                SqlDataReader miLector;
 
-                while (miLector.Read())
+                cmd.CommandText = "Select * From usuariosC";
+
+                cmd.Connection = cnn;
+                miLector = cmd.ExecuteReader();
+                if (miLector.HasRows)
                 {
-                    lista.Add(new Usuario( miLector.GetString(0), miLector.GetString(1), miLector.GetInt32(2)));
 
+                    while (miLector.Read())
+                    {
+                        lista.Add(new Usuario(miLector.GetString(0), miLector.GetString(1), miLector.GetInt32(2)));
+
+                    }
                 }
             }
-
-
-            if (cnn != null)
+            catch (SqlException e)
             {
-                miConexion.closeConnection(ref cnn);
+                throw e;
             }
-
+            finally
+            {
+                if (cnn != null)
+                {
+                    miConexion.closeConnection(ref cnn);
+                }
+            }
 
 
 
