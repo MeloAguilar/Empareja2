@@ -31,8 +31,8 @@ namespace UI.ViewModels
 		#region Constructors
 
 		public LoginVM() {
-			gestionBL.generarTablaBL();
-			gestionBL.insertarUsuarioBL(new Usuario("Admin", "Admin", ));
+			//gestionBL.generarTablaBL();
+			//gestionBL.insertarUsuarioBL(new Usuario("Admin", "Admin", 900 ));
 		}
 
 		#endregion
@@ -55,6 +55,7 @@ namespace UI.ViewModels
 				var usuari = new Dictionary<string, object>();
 				usuari.Add("user", user);
 				await Shell.Current.GoToAsync("main", false, usuari);
+				
 			}
 			catch (Exception) 
 			{
@@ -75,27 +76,25 @@ namespace UI.ViewModels
 		[RelayCommand]
 		public async void SignUp()
 		{
+			//Compruebo que no exista ese mismo nickname en la tabla usuariosc  de la base de datos
+			if (gestionBL.testIfExistsBL(nick))
+				return;
+
+
 			Usuario user = new Usuario(Nick, Password, 0);
+
+			
 
 			var listaAux = usuariosBL.getListadoCompletoUsuariosBL();
 
 			var salir = false;
 
-			for (int i = 0; i < listaAux.Count && !salir; i++)
-			{
-				if (user.Nick.Equals(listaAux[i].Nick))
-				{
-					salir = true;
-				}
-			}
-			if (!salir)
-			{
+		
 				gestionBL.insertarUsuarioBL(user);
-				Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
 				var usuari = new Dictionary<string, object>();
 				usuari.Add("user", user);
 				await Shell.Current.GoToAsync("main",false, usuari);
-			}
+			
 		}
 
 		#endregion

@@ -36,7 +36,8 @@ namespace DAL.Gestion
                 cnn = miConexion.getConnection();
                 SqlCommand comando = new SqlCommand();
                 comando.Connection = cnn;
-                comando.CommandText = "Create Table usuariosC (nickname varchar(30) Primary Key, password varchar(50), score long)";
+                comando.CommandText = "Create Table usuariosc (nickname varchar(30) Primary Key, password varchar(50), score bigint)";
+                comando.ExecuteNonQuery();
             }catch(Exception e)
             {
                 throw e ;
@@ -68,7 +69,7 @@ namespace DAL.Gestion
                 cnn = miConexion.getConnection();
                 SqlCommand comando = new SqlCommand();
                 comando.Connection = cnn;
-                comando.CommandText = "Insert into usuariosC (nickname, password, score) values(@nick, @pass, @score)";
+                comando.CommandText = "Insert into usuariosc (nickname, password, score) values(@nick, @pass, @score)";
                 comando.Parameters.AddWithValue("@nick", user.Nick);
                 comando.Parameters.AddWithValue("@pass", user.Password);
                 comando.Parameters.AddWithValue("@score", user.Score);
@@ -231,7 +232,7 @@ namespace DAL.Gestion
                         usuario = new(
                             lector.GetString(0),
                             "************",
-                            lector.GetInt32(2)
+                            lector.GetInt64(2)
                             );
                     }
                 }
@@ -298,7 +299,7 @@ namespace DAL.Gestion
                         usuario = new(
                             lector.GetString(0),
                             lector.GetString(1),
-                            lector.GetInt32(2)
+                            lector.GetInt64(2)
                             );
                     }
                 }
@@ -318,5 +319,59 @@ namespace DAL.Gestion
         }
 
 
+
+
+        public bool testIfExists(string name)
+        {
+
+            bool success = true;
+            SqlConnection cnn = null;
+
+            try
+            {
+                cnn = miConexion.getConnection();
+
+                SqlCommand comando = new SqlCommand();
+
+                comando.Connection = cnn;
+
+                SqlDataReader lector;
+
+                comando.CommandText = "Select nickname From usuariosc";
+
+                lector = comando.ExecuteReader();
+
+                if (lector.HasRows && success)
+                {
+                    while (lector.Read() && success)
+                    {
+                        if (lector.GetString(0).Equals(name))
+                        {
+                            success = false;
+                        }
+                    }
+                }
+
+
+
+					}
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            { 
+                if (cnn != null)
+                {
+                    miConexion.closeConnection(ref cnn);
+                }
+                    
+            }
+            return success;
+        }
+
     }
+
+
+
 }

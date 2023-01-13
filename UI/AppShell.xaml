@@ -11,13 +11,34 @@
         Route="login"
         ContentTemplate="{DataTemplate local:LoginPage}"
         FlyoutItemIsVisible="False"/>
-
+    
+    
+    <FlyoutItem Title="ScoreBoard"
+                Icon="scoreicon.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:ScoreboardPage}" />
+        </Tab>
+    </FlyoutItem>
+    
     <FlyoutItem Title="Game"
-                 Icon="gameicon.png"
-                 Route="game" />
-    <FlyoutItem Title="Highlights"
-                 Icon="scoreicon.png"
-                 Route="scoreboard" />
+                Icon="gameicon.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:GamePage}" />
+        </Tab>
+    </FlyoutItem>
+    
+
+  
+       
+
+        <ShellContent 
+            Title="Log out"
+            Icon="back.png"
+            ContentTemplate="{DataTemplate local:LoginPage}"
+            FlyoutItemIsVisible="False"/>
+  
+
+    
     <ShellContent
         ContentTemplate="{DataTemplate local:MainPAge}"
         Route="main"

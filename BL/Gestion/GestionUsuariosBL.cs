@@ -32,10 +32,14 @@ namespace BL.Gestion
             return dal.insertarUsuario(user);
         }
 
+		public bool testIfExistsBL(string name)
+        {
+            return dal.testIfExists(name);
+        }
 
 
 
-        public int deleteUsuarioBL(string id)
+		public int deleteUsuarioBL(string id)
         {
             return dal.deleteUsuario(id);
         }

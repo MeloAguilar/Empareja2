@@ -34,7 +34,7 @@ namespace UI.ViewModels
 		Usuario user;
 
 		[ObservableProperty]
-		//Entero que podrá ser 1 o 2, que corresponderá, 1 con una disposicion 2x2 y 2 con una disposicion 3x3
+		//Entero que podrá ser 0, 1 o 2, que corresponderá, 0 con una disposicion 2x4, 1 con una disposicion 3x3 y 2 con una disposicion de 4x4
 		int mode;
 
 
@@ -49,14 +49,7 @@ namespace UI.ViewModels
 
 		public GameVM()
 		{
-			var result = Shell.Current.DisplayActionSheet("Empareja2", "cancelar", "atrás", new string[] { "medio", "facil", "dificil" });
-			switch (result.Result)
-			{
-				case "facil": mode = 0; break;
-				case "medio": mode = 1; break;
-				case "dificil": mode = 2; break;
-				default: new GameVM(); break;
-			}
+			start();
 			getCards();
 		}
 
@@ -68,8 +61,18 @@ namespace UI.ViewModels
 
 		#region Utilities
 
+		private async void start()
+		{
+			var result = await Shell.Current.DisplayActionSheet("Empareja2", "cancelar", "atrás", new string[] { "medio", "facil", "dificil" });
+			switch (result)
+			{
+				case "facil": mode = 0; break;
+				case "medio": mode = 1; break;
+				case "dificil": mode = 2; break;
+				default: new GameVM(); break;
+			}
+		}
 
-		
 
 		/// <summary>
 		/// Método que se encarga de darle elatributo urlFront a un objeto de tipo Card segun el entero que le llegue como parámetro
@@ -149,12 +152,12 @@ namespace UI.ViewModels
 				modeValue = 3;
 				numCards = new int[] { 0, 0, 0 };
 			}
-			else if(mode == 1)
+			else if (mode == 1)
 			{
 				modeValue = 6;
 				numCards = new int[] { 0, 0, 0, 0, 0, 0 };
 			}
-			else if(mode == 2)
+			else if (mode == 2)
 			{
 				modeValue = 8;
 				numCards = new int[] { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -169,7 +172,7 @@ namespace UI.ViewModels
 
 				if (value != prevalue && numCards[i] < 2)
 				{
-					
+
 					Cards.Add(eleccionCarta(value));
 				}
 
